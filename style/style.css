@@ -59,6 +59,17 @@ img[alt='Logo'] {
 	height: 30rem;
 }
 
+input[type="text"] {
+	width: 20rem;
+	margin-left: 1px;
+	padding: 2px 13px;
+
+}
+
+.search-btn {
+	margin-left: 5px;
+	padding: 2px 13px;
+}
 
 .gradient {
 	display: flex;
@@ -86,7 +97,8 @@ img[alt='Logo'] {
 }
 
 .search_section form,
-.search_section form button {
+.search_section form button,
+.search-section form button {
 	height: 50px;
 	border-radius: 0;
 }
@@ -189,12 +201,20 @@ footer {
 	header .btn {
 		display: none;
 	}
+
+	input[type="text"] {
+		width: 15rem;
+	}
 }
 
 
 @media screen and (max-width: 768px) {
 	.display-none {
 		display: none;
+	}
+
+	input[type="text"] {
+		width: 10rem;
 	}
 
 	.suv-card {
