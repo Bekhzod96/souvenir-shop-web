@@ -52,6 +52,7 @@ main section {
 
 .result-item img {
 	height: 15rem;
+	max-width: 11rem;
 }
 
 .result-item:hover {
