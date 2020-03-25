@@ -1,668 +1,1197 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="Author" content="Bekhzod Akhrorov // Beka " />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://kit.fontawesome.com/7290f27402.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="//db.onlinewebfonts.com/c/3a47f5f06b5484abfeee9eac90348a9c?family=Gotham"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link rel="stylesheet" href="style/style.css" />
+		<title>Uzbek Souvenirs</title>
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="Author" content="Bekhzod Akhrorov // Beka " />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-	<script src="https://kit.fontawesome.com/7290f27402.js" crossorigin="anonymous"></script>
-	<link href="//db.onlinewebfonts.com/c/3a47f5f06b5484abfeee9eac90348a9c?family=Gotham" rel="stylesheet"
-		type="text/css" />
-	<link rel="stylesheet" href="style/style.css" />
-	<title>Uzbek Souvenirs</title>
-</head>
-
-<body>
-	<header class="d-flex justify-content-around align-items-center">
-		<div>
-			<a href="index.html" class="header-logo">
-				<img src="image/logo.png" alt="Logo" />
-				<span> UzSuv</span>
-			</a>
-			<a href="#" class="fas fa-home display-none"> HOME</a>
-			<a href="#" class="fas fa-columns display-none"> Collection</a>
-			<a href="#" class="fas fa-shopping-cart"> PURCHASE LIST</a>
-			<button class="btn"> POST AN AD</button>
-		</div>
-		<a href="#">
-			<i class="far fa-envelope"></i>
-			Bekzod Akhrorov
-		</a>
-	</header>
-	<section class="search_section">
-		<div class="gradient">
-			<div class="welcome"> </div>
-			<form action="/search_result.html" class="d-flex">
-				<div class="dropdown ">
-					<button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">
-						Categories
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-						<button class="dropdown-item" type="button">Souviners</button>
-						<button class="dropdown-item" type="button">Clothes</button>
-						<button class="dropdown-item" type="button">Shoes</button>
-					</div>
-				</div>
-				<input type="text" placeholder="Souvenir" />
-				<input type="text" placeholder="Price" />
-				<button class="bg-dark border-0 text-light">Search</button>
-			</form>
-		</div>
-	</section>
-	<!-- Ads section -->
-	<section class="ads_section d-flex align-items-center">
-		<a href="#" class="fas fa-chevron-left"></a>
-
-		<div id="carouselExampleSlidesOnly" class="carousel slide w-100 d-flex justify-content-center" data-ride="carousel">
-			<div class="carousel-inner w-75">
-				<h4 class="titles my-3">HOT ADS</h4>
-				<div class="carousel-item active ads-content">
-					<!-- Frist Ads -->
-					<img class="ads-image"
-						src="https://isthatplacesafe.com/wp-content/uploads/2019/01/how-safe-is-uzbekistan-for-tourists.jpg"
-						alt="Ads-image">
-					<h2 class="font-red">Ceramic hand made sculpture</h2>
-					<p>
-						A souvenir memento, keepsake, or token of remembrance is an object a person acquires for the memories the
-						owner associates with it. A souvenir can be any object that can be collected or purchased and transported
-						home by the traveler as a memento of a visit. The object itself may have intrinsic value, or be a symbol of
-						experience. Without the owner's input, the symbolic meaning is invisible and cannot be articulated.
-					</p>
-					<p><b>By:</b>Akmal Q.</p>
-					<p><b>Location:</b>Registan, Samarkand</p>
-					<button class="btn "> Buy 40$</button>
-				</div>
-
-				<div class="carousel-item  ads-content">
-					<!-- Second Ads // Thinks to do in Uzbekistan -->
-					<img class="ads-image"
-						src="https://cdn.twomonkeystravelgroup.com/wp-content/uploads/2019/11/Things-to-do-in-Uzbekistan3.png"
-						alt="Ads-image">
-					<h2 class="font-red">Ancient Cities Tour to Uzbekistan</h2>
-					<p>
-						<b> Ancient Cities Tour to Uzbekistan: </b>Explore Ancient Cities Samarkand, Shakhrisabz, Bukhara and Khiva
-						- the Oldest Inhabited Cities in Central Asia.
-					</p>
-					<p><b>By:</b>Amina Tour</p>
-					<p><b>Location:</b>Tasheknt</p>
-					<button class="btn "> Buy 440$</button>
-				</div>
-
-			</div>
-
-		</div>
-
-		<a href="#" class="fas fa-chevron-right"></a>
-
-	</section>
-	<main class="bg-light">
-		<!-- Souviner -->
-		<h6> <i class="fas fa-air-freshener"></i> SOUVENIRS</h6>
-		<hr>
-		<article class="souvenir">
-			<!-- Prev button -->
-
-			<a href="#" class="fas fa-chevron-left"></a>
-			<div id="carouselExampleSlidesOnly" class="carousel slide w-100 d-flex justify-content-center"
-				data-ride="carousel">
-				<!-- Frist Card -->
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<!-- insight of first card -->
-						<div class="d-flex justify-content-around">
-							<div class="suv-card">
-								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image">
-								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red"> Colored</h5>
-								<p><span>From</span> Samarkand, UZ</p>
-								<!-- Last line of the card -->
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">9.5$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card ">
-								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image">
-								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red"> Colored</h5>
-								<p><span>From</span> Samarkand, UZ</p>
-								<!-- Last line of the card -->
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">9.5$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image">
-								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red"> Colored</h5>
-								<p><span>From</span> Samarkand, UZ</p>
-								<!-- Last line of the card -->
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">9.5$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image">
-								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red"> Colored</h5>
-								<p><span>From</span> Samarkand, UZ</p>
-								<!-- Last line of the card -->
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">9.5$</h5>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-					<!-- Second Card -->
-					<div class="carousel-item ">
-						<!-- insight of first card -->
-						<div class="d-flex justify-content-around">
-							<div class="suv-card">
-								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image">
-								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red"> Colored</h5>
-								<p><span>From</span> Samarkand, UZ</p>
-								<!-- Last line of the card -->
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">9.5$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card">
-								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image">
-								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red"> Colored</h5>
-								<p><span>From</span> Samarkand, UZ</p>
-								<!-- Last line of the card -->
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">9.5$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image">
-								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red"> Colored</h5>
-								<p><span>From</span> Samarkand, UZ</p>
-								<!-- Last line of the card -->
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">9.5$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image">
-								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red"> Colored</h5>
-								<p><span>From</span> Samarkand, UZ</p>
-								<!-- Last line of the card -->
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">9.5$</h5>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Next button -->
-			<a href="#" class="fas fa-chevron-right"></a>
-		</article>
-
-		<h6> <i class="fas fa-tshirt"></i> CLOTHES <small>(jackets, tshirt)</small></h6>
-		<hr>
-		<!-- clothes  article -->
-
-		<article class="clothes">
-			<a href="#" class="fas fa-chevron-left"></a>
-			<div id="carouselExampleSlidesOnly" class="carousel slide w-100 d-flex justify-content-center"
-				data-ride="carousel">
-				<!-- Frist Card -->
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<!-- insight of first card -->
-						<div class="d-flex justify-content-around">
-
-
-							<div class="suv-card">
-								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image">
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">200$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card">
-								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image">
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">200$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image">
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">200$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image">
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">200$</h5>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-					<!-- Second Card -->
-					<div class="carousel-item">
-						<!-- insight of first card -->
-						<div class="d-flex justify-content-around">
-
-							<div class="suv-card">
-								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image">
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">200$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card">
-								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image">
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">200$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image">
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">200$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image">
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">200$</h5>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Next button -->
-			<a href="#" class="fas fa-chevron-right"></a>
-		</article>
-		<h6> <i class="fas fa-shoe-prints"></i> SHOES <small>(man, woman)</small></h6>
-		<hr>
-		<!-- Shoes Article -->
-		<article class="shoes">
-			<a href="#" class="fas fa-chevron-left"></a>
-			<div id="carouselExampleSlidesOnly" class="carousel slide w-100 d-flex justify-content-center"
-				data-ride="carousel">
-				<!-- Frist Card -->
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<!-- insight of first card -->
-						<div class="d-flex justify-content-around">
-
-							<div class="suv-card">
-								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image">
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">50$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card">
-								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image">
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">50$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image">
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">50$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image">
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">50$</h5>
-								</div>
-							</div>
-
-						</div>
-
-					</div>
-					<!-- Second Card -->
-					<div class="carousel-item">
-						<!-- insight of first card -->
-						<div class="d-flex justify-content-around">
-
-							<div class="suv-card">
-								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image">
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">50$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card">
-								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image">
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">50$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image">
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">50$</h5>
-								</div>
-							</div>
-
-							<div class="suv-card display-none">
-								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image">
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red"> SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI </p>
-								<div class="dropup d-flex align-items-baseline justify-content-between">
-									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">+ </button>
-									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a class="dropdown-item btn-dark" href="#">Add to Collection</a>
-										<a class="dropdown-item btn-dark" href="#">Send a Message</a>
-										<a class="dropdown-item btn-dark" href="#">More Details</a>
-									</div>
-									<h5 class="font-red">50$</h5>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Next button -->
-			<a href="#" class="fas fa-chevron-right"></a>
-
-		</article>
-
-
-	</main>
-
-	<footer>
-		<div class="footer-top d-flex justify-content-around">
-			<div class="w-50 footer-logo">
-				<a href="#">
+	<body>
+		<header class="d-flex justify-content-around align-items-center">
+			<div>
+				<a href="index.html" class="header-logo">
 					<img src="image/logo.png" alt="Logo" />
+					<span> UzSuv</span>
 				</a>
-				<span class="display-none"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-					Ipsum has been the industry's
-					standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-					make
-					a type specimen book.</span>
+				<a href="#" class="fas fa-home display-none"> HOME</a>
+				<a href="#" class="fas fa-columns display-none"> Collection</a>
+				<a href="#" class="fas fa-shopping-cart"> PURCHASE LIST</a>
+				<button class="btn">POST AN AD</button>
 			</div>
-			<div class="categories">
-				<h6 class="font-red ">CATIGORIES</h6>
-				<hr>
-				<ul class="list-unstyled">
-					<li><a href="#">Souvenir</a> </li>
-					<li><a href="#">Clothes</a> </li>
-					<li><a href="#">Shoes</a> </li>
-				</ul>
+			<a href="#">
+				<i class="far fa-envelope"></i>
+				Bekzod Akhrorov
+			</a>
+		</header>
+		<section class="search_section">
+			<h1>Like</h1>
+			<div class="gradient">
+				<div class="welcome"></div>
+				<form action="/search_result.html" class="d-flex">
+					<div class="dropdown ">
+						<button
+							class="btn bg-white dropdown-toggle"
+							type="button"
+							id="dropdownMenu2"
+							data-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+						>
+							Categories
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+							<button class="dropdown-item" type="button">Souviners</button>
+							<button class="dropdown-item" type="button">Clothes</button>
+							<button class="dropdown-item" type="button">Shoes</button>
+						</div>
+					</div>
+					<input type="text" placeholder="Souvenir" />
+					<input type="text" placeholder="Price" />
+					<button class="bg-dark border-0 text-light">Search</button>
+				</form>
+			</div>
+		</section>
+		<!-- Ads section -->
+		<section class="ads_section d-flex align-items-center">
+			<a href="#" class="fas fa-chevron-left"></a>
+
+			<div
+				id="carouselExampleSlidesOnly"
+				class="carousel slide w-100 d-flex justify-content-center"
+				data-ride="carousel"
+			>
+				<div class="carousel-inner w-75">
+					<h4 class="titles my-3">HOT ADS</h4>
+					<div class="carousel-item active ads-content">
+						<!-- Frist Ads -->
+						<img
+							class="ads-image"
+							src="https://isthatplacesafe.com/wp-content/uploads/2019/01/how-safe-is-uzbekistan-for-tourists.jpg"
+							alt="Ads-image"
+						/>
+						<h2 class="font-red">Ceramic hand made sculpture</h2>
+						<p>
+							A souvenir memento, keepsake, or token of remembrance is an object
+							a person acquires for the memories the owner associates with it. A
+							souvenir can be any object that can be collected or purchased and
+							transported home by the traveler as a memento of a visit. The
+							object itself may have intrinsic value, or be a symbol of
+							experience. Without the owner's input, the symbolic meaning is
+							invisible and cannot be articulated.
+						</p>
+						<p><b>By:</b>Akmal Q.</p>
+						<p><b>Location:</b>Registan, Samarkand</p>
+						<button class="btn ">Buy 40$</button>
+					</div>
+
+					<div class="carousel-item  ads-content">
+						<!-- Second Ads // Thinks to do in Uzbekistan -->
+						<img
+							class="ads-image"
+							src="https://cdn.twomonkeystravelgroup.com/wp-content/uploads/2019/11/Things-to-do-in-Uzbekistan3.png"
+							alt="Ads-image"
+						/>
+						<h2 class="font-red">Ancient Cities Tour to Uzbekistan</h2>
+						<p>
+							<b> Ancient Cities Tour to Uzbekistan: </b>Explore Ancient Cities
+							Samarkand, Shakhrisabz, Bukhara and Khiva - the Oldest Inhabited
+							Cities in Central Asia.
+						</p>
+						<p><b>By:</b>Amina Tour</p>
+						<p><b>Location:</b>Tasheknt</p>
+						<button class="btn ">Buy 440$</button>
+					</div>
+				</div>
 			</div>
 
-			<div class="categories">
-				<h6 class="font-red ">NAVIGATION</h6>
-				<hr>
-				<ul class="list-unstyled">
-					<li><a href="#">Home</a> </li>
-					<li><a href="#">Sign In</a> </li>
-					<li><a href="#">Sign Up</a> </li>
-					<li><a href="#">Terms & Conditions</a> </li>
-					<li><a href="#">FAQ</a> </li>
-					<li><a href="#">Help</a> </li>
-				</ul>
-			</div>
+			<a href="#" class="fas fa-chevron-right"></a>
+		</section>
+		<main class="bg-light">
+			<!-- Souviner -->
+			<h6><i class="fas fa-air-freshener"></i> SOUVENIRS</h6>
+			<hr />
+			<article class="souvenir">
+				<!-- Prev button -->
 
-			<div class="categories">
-				<h6 class="font-red py-3">COUNTRY</h6>
-				<h6 class="font-red py-3">LANGUAGES</h6>
-				<h6 class="font-red py-3">CURRENCY</h6>
-			</div>
-		</div>
-		<hr>
-		<div class="footer-bottom">
-			Copyright 2020. All Rights Reserved. Designed by Bekhzod Akhrorov
-		</div>
-	</footer>
-	<!-- Link to Bootstrap  -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
-</body>
+				<a href="#" class="fas fa-chevron-left"></a>
+				<div
+					class="carousel slide w-100 d-flex justify-content-center"
+					data-ride="carousel"
+				>
+					<!-- Frist Card -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<!-- insight of first card -->
+							<div class="d-flex justify-content-around">
+								<div class="suv-card">
+									<img
+										src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg"
+										alt="Card-image"
+									/>
+									<h5>Handmade Souvenir</h5>
+									<h5 class="font-red">Colored</h5>
+									<p><span>From</span> Samarkand, UZ</p>
+									<!-- Last line of the card -->
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">9.5$</h5>
+									</div>
+								</div>
 
+								<div class="suv-card ">
+									<img
+										src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg"
+										alt="Card-image"
+									/>
+									<h5>Handmade Souvenir</h5>
+									<h5 class="font-red">Colored</h5>
+									<p><span>From</span> Samarkand, UZ</p>
+									<!-- Last line of the card -->
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">9.5$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg"
+										alt="Card-image"
+									/>
+									<h5>Handmade Souvenir</h5>
+									<h5 class="font-red">Colored</h5>
+									<p><span>From</span> Samarkand, UZ</p>
+									<!-- Last line of the card -->
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">9.5$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg"
+										alt="Card-image"
+									/>
+									<h5>Handmade Souvenir</h5>
+									<h5 class="font-red">Colored</h5>
+									<p><span>From</span> Samarkand, UZ</p>
+									<!-- Last line of the card -->
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">9.5$</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Second Card -->
+						<div class="carousel-item ">
+							<!-- insight of first card -->
+							<div class="d-flex justify-content-around">
+								<div class="suv-card">
+									<img
+										src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg"
+										alt="Card-image"
+									/>
+									<h5>Handmade Souvenir</h5>
+									<h5 class="font-red">Colored</h5>
+									<p><span>From</span> Samarkand, UZ</p>
+									<!-- Last line of the card -->
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">9.5$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card">
+									<img
+										src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg"
+										alt="Card-image"
+									/>
+									<h5>Handmade Souvenir</h5>
+									<h5 class="font-red">Colored</h5>
+									<p><span>From</span> Samarkand, UZ</p>
+									<!-- Last line of the card -->
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">9.5$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg"
+										alt="Card-image"
+									/>
+									<h5>Handmade Souvenir</h5>
+									<h5 class="font-red">Colored</h5>
+									<p><span>From</span> Samarkand, UZ</p>
+									<!-- Last line of the card -->
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">9.5$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg"
+										alt="Card-image"
+									/>
+									<h5>Handmade Souvenir</h5>
+									<h5 class="font-red">Colored</h5>
+									<p><span>From</span> Samarkand, UZ</p>
+									<!-- Last line of the card -->
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">9.5$</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Next button -->
+				<a href="#" class="fas fa-chevron-right"></a>
+			</article>
+
+			<h6>
+				<i class="fas fa-tshirt"></i> CLOTHES <small>(jackets, tshirt)</small>
+			</h6>
+			<hr />
+			<!-- clothes  article -->
+
+			<article class="clothes">
+				<a href="#" class="fas fa-chevron-left"></a>
+				<div
+					class="carousel slide w-100 d-flex justify-content-center"
+					data-ride="carousel"
+				>
+					<!-- Frist Card -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<!-- insight of first card -->
+							<div class="d-flex justify-content-around">
+								<div class="suv-card">
+									<img
+										src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg"
+										alt="Card-image"
+									/>
+									<h5>COSTUME JACKET</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">200$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card">
+									<img
+										src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg"
+										alt="Card-image"
+									/>
+									<h5>COSTUME JACKET</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">200$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg"
+										alt="Card-image"
+									/>
+									<h5>COSTUME JACKET</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">200$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg"
+										alt="Card-image"
+									/>
+									<h5>COSTUME JACKET</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">200$</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Second Card -->
+						<div class="carousel-item">
+							<!-- insight of first card -->
+							<div class="d-flex justify-content-around">
+								<div class="suv-card">
+									<img
+										src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg"
+										alt="Card-image"
+									/>
+									<h5>COSTUME JACKET</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">200$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card">
+									<img
+										src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg"
+										alt="Card-image"
+									/>
+									<h5>COSTUME JACKET</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											id="dropdownMenuButton"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">200$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg"
+										alt="Card-image"
+									/>
+									<h5>COSTUME JACKET</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">200$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg"
+										alt="Card-image"
+									/>
+									<h5>COSTUME JACKET</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">200$</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Next button -->
+				<a href="#" class="fas fa-chevron-right"></a>
+			</article>
+			<h6>
+				<i class="fas fa-shoe-prints"></i> SHOES <small>(man, woman)</small>
+			</h6>
+			<hr />
+			<!-- Shoes Article -->
+			<article class="shoes">
+				<a href="#" class="fas fa-chevron-left"></a>
+				<div
+					class="carousel slide w-100 d-flex justify-content-center"
+					data-ride="carousel"
+				>
+					<!-- Frist Card -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<!-- insight of first card -->
+							<div class="d-flex justify-content-around">
+								<div class="suv-card">
+									<img
+										src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg"
+										alt="Card-image"
+									/>
+									<h5>WOMEN SHOES</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">50$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card">
+									<img
+										src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg"
+										alt="Card-image"
+									/>
+									<h5>WOMEN SHOES</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">50$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg"
+										alt="Card-image"
+									/>
+									<h5>WOMEN SHOES</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">50$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg"
+										alt="Card-image"
+									/>
+									<h5>WOMEN SHOES</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">50$</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Second Card -->
+						<div class="carousel-item">
+							<!-- insight of first card -->
+							<div class="d-flex justify-content-around">
+								<div class="suv-card">
+									<img
+										src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg"
+										alt="Card-image"
+									/>
+									<h5>WOMEN SHOES</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">50$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card">
+									<img
+										src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg"
+										alt="Card-image"
+									/>
+									<h5>WOMEN SHOES</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">50$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg"
+										alt="Card-image"
+									/>
+									<h5>WOMEN SHOES</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">50$</h5>
+									</div>
+								</div>
+
+								<div class="suv-card display-none">
+									<img
+										src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg"
+										alt="Card-image"
+									/>
+									<h5>WOMEN SHOES</h5>
+									<h5 class="font-red">SILK</h5>
+									<p><span>Made</span> EMBROIDERY SUZANI</p>
+									<div
+										class="dropup d-flex align-items-baseline justify-content-between"
+									>
+										<button
+											class="btn btn-light"
+											type="button"
+											data-toggle="dropdown"
+											aria-haspopup="true"
+											aria-expanded="false"
+										>
+											+
+										</button>
+										<div
+											class="dropdown-menu"
+											aria-labelledby="dropdownMenuButton"
+										>
+											<a class="dropdown-item btn-dark" href="#"
+												>Add to Collection</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>Send a Message</a
+											>
+											<a class="dropdown-item btn-dark" href="#"
+												>More Details</a
+											>
+										</div>
+										<h5 class="font-red">50$</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Next button -->
+				<a href="#" class="fas fa-chevron-right"></a>
+			</article>
+		</main>
+
+		<footer>
+			<div class="footer-top d-flex justify-content-around">
+				<div class="w-50 footer-logo">
+					<a href="#">
+						<img src="image/logo.png" alt="Logo" />
+					</a>
+					<span class="display-none">
+						Lorem Ipsum is simply dummy text of the printing and typesetting
+						industry. Lorem Ipsum has been the industry's standard dummy text
+						ever since the 1500s, when an unknown printer took a galley of type
+						and scrambled it to make a type specimen book.</span
+					>
+				</div>
+				<div class="categories">
+					<h6 class="font-red ">CATIGORIES</h6>
+					<hr />
+					<ul class="list-unstyled">
+						<li><a href="#">Souvenir</a></li>
+						<li><a href="#">Clothes</a></li>
+						<li><a href="#">Shoes</a></li>
+					</ul>
+				</div>
+
+				<div class="categories">
+					<h6 class="font-red ">NAVIGATION</h6>
+					<hr />
+					<ul class="list-unstyled">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Sign In</a></li>
+						<li><a href="#">Sign Up</a></li>
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+
+				<div class="categories">
+					<h6 class="font-red py-3">COUNTRY</h6>
+					<h6 class="font-red py-3">LANGUAGES</h6>
+					<h6 class="font-red py-3">CURRENCY</h6>
+				</div>
+			</div>
+			<hr />
+			<div class="footer-bottom">
+				Copyright 2020. All Rights Reserved. Designed by Bekhzod Akhrorov
+			</div>
+		</footer>
+		<!-- Link to Bootstrap  -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
