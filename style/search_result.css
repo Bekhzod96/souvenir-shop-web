@@ -1,81 +1,81 @@
 .search-section {
-	background-color: #d35266;
-	height: 12rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  background-color: #d35266;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-section div {
-	color: white;
-	font-family: Helvetica;
-	font-weight: 700;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 700;
 }
 
 main {
-	width: 100%;
-	padding: 0;
-	display: flex;
+  width: 100%;
+  padding: 0;
+  display: flex;
 }
 
 aside {
-	width: 25%;
-	border: 1px solid lightgray;
-	padding: 25px;
-	font-size: 18px;
-	line-height: 1.8;
-	color: #888;
+  width: 25%;
+  border: 1px solid lightgray;
+  padding: 25px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #888;
 }
 
 main section {
-	width: 100%;
-	font-family: Helvetica;
-	border: 1px solid lightgray;
+  width: 100%;
+  font-family: Helvetica;
+  border: 1px solid lightgray;
 }
 
 .main-top {
-	border: 1px solid lightgray;
-	padding: 15px 0 0 15px;
-	color: #888;
+  border: 1px solid lightgray;
+  padding: 15px 0 0 15px;
+  color: #888;
 }
 
 .result-item {
-	display: flex;
-	padding: 20px 40px 20px 20px;
-	gap: 35px;
-	color: #888;
-	font-family: Gotham;
-	border: 1px solid lightgray;
-	margin: 5px 0;
+  display: flex;
+  padding: 20px 40px 20px 20px;
+  gap: 35px;
+  color: #888;
+  font-family: Gotham;
+  border: 1px solid lightgray;
+  margin: 5px 0;
 }
 
 .result-item img {
-	height: 15rem;
-	max-width: 11rem;
+  height: 15rem;
+  max-width: 11rem;
 }
 
 .result-item:hover {
-	background-color: white;
-	transform: scale(1.01);
-	cursor: pointer;
+  background-color: white;
+  transform: scale(1.01);
+  cursor: pointer;
 }
 
 .pages>* {
-	border: 1px solid lightgray;
-	padding: 5px 12px;
-	margin: 3px;
+  border: 1px solid lightgray;
+  padding: 5px 12px;
+  margin: 3px;
 }
 
 
 .pages-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #888;
-	margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  margin: 20px;
 }
 
 .pages-container>* {
-	margin: 15px;
+  margin: 15px;
 }
