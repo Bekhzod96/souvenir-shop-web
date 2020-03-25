@@ -1,5 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/3a47f5f06b5484abfeee9eac90348a9c?family=Gotham);
-
 body {
   padding: 0;
   margin: 0;
@@ -80,22 +78,18 @@ input[type='text'] {
   width: 100%;
   height: 100%;
   background-image:
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       rgba(211, 82, 102, 0.9),
       rgba(255, 255, 255, 0.2),
-      rgba(211, 82, 102, 0.9)
-    );
+      rgba(211, 82, 102, 0.9));
 }
 
 .gradient:hover {
   background-image:
-    linear-gradient(
-      to top,
+    linear-gradient(to top,
       rgba(255, 255, 255, 0.2),
       rgba(211, 82, 102, 0.8),
-      rgba(255, 255, 255, 0.2)
-    );
+      rgba(255, 255, 255, 0.2));
 }
 
 .welcome {
