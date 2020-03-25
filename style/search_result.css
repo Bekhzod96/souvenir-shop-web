@@ -35,7 +35,8 @@ aside {
 main section {
   width: 100%;
   font-family:
-    Helvetica, Arial,
+    Helvetica, 
+    Arial,
     'Lucida Grande',
     sans-serif;
   border: 1px solid lightgray;
