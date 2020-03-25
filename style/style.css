@@ -1,21 +1,18 @@
 @import url(//db.onlinewebfonts.com/c/3a47f5f06b5484abfeee9eac90348a9c?family=Gotham);
 
-@font-face {
-  font-family: 'Gotham';
-  src: url('//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.eot');
-  src: url('//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.eot?#iefix') format('embedded-opentype'),
-    url('//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.woff2') format('woff2'),
-    url('//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.woff') format('woff'),
-    url('//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.ttf') format('truetype'),
-    url('//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.svg#Gotham') format('svg');
-}
-
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
-    Helvetica, Gotham, Arial, 'Lucida Grande', sans-serif;
+  font-family:
+    'HelveticaNeue-Light',
+    'Helvetica Neue Light',
+    'Helvetica Neue',
+    Helvetica,
+    Gotham,
+    Arial,
+    'Lucida Grande',
+    sans-serif;
 }
 
 a {
@@ -56,18 +53,17 @@ img[alt='Logo'] {
 }
 
 .search_section {
-  background-image: url("https://live.staticflickr.com/918/43077333002_eae50d1f06_b.jpg");
+  background-image: url('https://live.staticflickr.com/918/43077333002_eae50d1f06_b.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 30rem;
 }
 
-input[type="text"] {
+input[type='text'] {
   width: 20rem;
   margin-left: 1px;
   padding: 2px 13px;
-
 }
 
 .search-btn {
@@ -83,17 +79,29 @@ input[type="text"] {
   padding-top: 50px;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, rgba(211, 82, 102, 0.9), rgba(255, 255, 255, 0.2), rgba(211, 82, 102, 0.9));
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(211, 82, 102, 0.9),
+      rgba(255, 255, 255, 0.2),
+      rgba(211, 82, 102, 0.9)
+    );
 }
 
 .gradient:hover {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(211, 82, 102, 0.8), rgba(255, 255, 255, 0.2));
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.2),
+      rgba(211, 82, 102, 0.8),
+      rgba(255, 255, 255, 0.2)
+    );
 }
 
 .welcome {
   height: 200px;
   width: 400px;
-  background-image: url("/image/uzlogo_color.png");
+  background-image: url('/image/uzlogo_color.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,7 +159,6 @@ article {
   display: flex;
   align-items: center;
   padding: 20px 0;
-
 }
 
 article a {
@@ -166,10 +173,9 @@ article a {
   padding: 15px;
   color: #888;
   font-family: Helvetica Neue;
-
 }
 
-img[alt="Card-image"] {
+img[alt='Card-image'] {
   width: 100%;
   margin-bottom: 15px;
 }
@@ -206,18 +212,17 @@ footer {
     display: none;
   }
 
-  input[type="text"] {
+  input[type='text'] {
     width: 15rem;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .display-none {
     display: none;
   }
 
-  input[type="text"] {
+  input[type='text'] {
     width: 10rem;
   }
 
@@ -242,5 +247,4 @@ footer {
     justify-content: center;
     margin: 0 0 20px 40px;
   }
-
 }
