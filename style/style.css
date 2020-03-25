@@ -106,12 +106,12 @@ input[type='text'] {
 }
 
 .welcome {
-  height: 200px;
+  height: 120px;
   width: 400px;
-  background-image: url('/image/uzlogo_color.png');
+  background-image: url('https://uzbektourism.uz/uploads/images/597new.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 80%;
   justify-self: self-start;
 }
 
