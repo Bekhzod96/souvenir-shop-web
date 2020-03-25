@@ -35,8 +35,7 @@ aside {
 main section {
   width: 100%;
   font-family:
-  Helvetica,
-  Arial,
+  Helvetica, Arial,
   'Lucida Grande',
   sans-serif;
   border: 1px solid lightgray;
@@ -55,8 +54,8 @@ main section {
   color: #888;
   font-family: 
   Gotham, 
-  Arial,
-  'Lucida Grande',
+  Arial, 
+  'Lucida Grande', 
   sans-serif;
   border: 1px solid lightgray;
   margin: 5px 0;

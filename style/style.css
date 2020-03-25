@@ -49,7 +49,11 @@ img[alt='Logo'] {
 }
 
 .header-logo span {
-  font-family: Gotham;
+  font-family: 
+  Gotham,
+  Arial,
+  'Lucida Grande',
+  sans-serif;
   font-weight: 900;
   color: white;
   font-size: x-large;
@@ -88,15 +92,17 @@ input[type='text'] {
       rgba(211, 82, 102, 0.9),
       rgba(255, 255, 255, 0.2),
       rgba(211, 82, 102, 0.9)
-      );
+    );
 }
 
 .gradient:hover {
   background-image:
-    linear-gradient(to top,
+    linear-gradient(
+      to top,
       rgba(255, 255, 255, 0.2),
       rgba(211, 82, 102, 0.8),
-      rgba(255, 255, 255, 0.2));
+      rgba(255, 255, 255, 0.2)
+    );
 }
 
 .welcome {
@@ -138,7 +144,11 @@ main h6 {
 
 .ads-content {
   color: #888;
-  font-family: Helvetica Neue;
+  font-family: 
+  Helvetica Neue,
+  Arial,
+  'Lucida Grande',
+  sans-serif;
   line-height: 1.2;
   font-size: 15px;
 }
@@ -151,8 +161,7 @@ main h6 {
 }
 
 header .btn,
-.ads-content .btn
- {
+.ads-content .btn {
   background-color: #d35266;
   color: white;
 }
@@ -169,7 +178,11 @@ article {
   border: 1px solid lightgrey;
   padding: 15px;
   color: #888;
-  font-family: Helvetica Neue;
+  font-family: 
+  'Helvetica Neue',
+  Arial,
+  'Lucida Grande',
+  sans-serif;
 }
 
 img[alt='Card-image'] {
@@ -186,13 +199,21 @@ img[alt='Card-image'] {
 footer {
   padding: 20px;
   color: #888;
-  font-family: Helvetica Neue;
+  font-family: 
+  'Helvetica Neue',
+  Arial,
+  'Lucida Grande',
+  sans-serif;
 }
 
 .footer-logo {
   display: flex;
   color: #888;
-  font-family: Gotham;
+  font-family: 
+  Gotham,
+  Arial,
+  'Lucida Grande',
+  sans-serif;
 }
 
 .footer-logo img {
