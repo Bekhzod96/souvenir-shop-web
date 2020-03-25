@@ -9,11 +9,11 @@
 
 .search-section div {
   color: white;
-  font-family: 
-  Helvetica, 
-  Arial,
-  'Lucida Grande',
-  sans-serif;
+  font-family:
+    Helvetica, 
+    Arial,
+    'Lucida Grande',
+    sans-serif;
   font-weight: 700;
 }
 
@@ -35,9 +35,9 @@ aside {
 main section {
   width: 100%;
   font-family:
-  Helvetica, Arial,
-  'Lucida Grande',
-  sans-serif;
+    Helvetica, Arial,
+    'Lucida Grande',
+    sans-serif;
   border: 1px solid lightgray;
 }
 
@@ -52,11 +52,11 @@ main section {
   padding: 20px 40px 20px 20px;
   gap: 35px;
   color: #888;
-  font-family: 
-  Gotham, 
-  Arial, 
-  'Lucida Grande', 
-  sans-serif;
+  font-family:
+    Gotham,
+    Arial,
+    'Lucida Grande',
+    sans-serif;
   border: 1px solid lightgray;
   margin: 5px 0;
 }

@@ -49,11 +49,11 @@ img[alt='Logo'] {
 }
 
 .header-logo span {
-  font-family: 
-  Gotham,
-  Arial,
-  'Lucida Grande',
-  sans-serif;
+  font-family:
+    Gotham,
+    Arial,
+    'Lucida Grande',
+    sans-serif;
   font-weight: 900;
   color: white;
   font-size: x-large;
@@ -144,11 +144,11 @@ main h6 {
 
 .ads-content {
   color: #888;
-  font-family: 
-  Helvetica Neue,
-  Arial,
-  'Lucida Grande',
-  sans-serif;
+  font-family:
+    'Helvetica Neue',
+    Arial,
+    'Lucida Grande',
+    sans-serif;
   line-height: 1.2;
   font-size: 15px;
 }
@@ -178,11 +178,11 @@ article {
   border: 1px solid lightgrey;
   padding: 15px;
   color: #888;
-  font-family: 
-  'Helvetica Neue',
-  Arial,
-  'Lucida Grande',
-  sans-serif;
+  font-family:
+    'Helvetica Neue',
+    Arial,
+    'Lucida Grande',
+    sans-serif;
 }
 
 img[alt='Card-image'] {
@@ -193,27 +193,31 @@ img[alt='Card-image'] {
 .titles,
 .categories {
   color: #888;
-  font-family: Gotham;
+  font-family:
+    Gotham,
+    Arial,
+    'Lucida Grande',
+    sans-serif;;
 }
 
 footer {
   padding: 20px;
   color: #888;
-  font-family: 
-  'Helvetica Neue',
-  Arial,
-  'Lucida Grande',
-  sans-serif;
+  font-family:
+    'Helvetica Neue',
+    Arial,
+    'Lucida Grande',
+    sans-serif;
 }
 
 .footer-logo {
   display: flex;
   color: #888;
-  font-family: 
-  Gotham,
-  Arial,
-  'Lucida Grande',
-  sans-serif;
+  font-family:
+    Gotham,
+    Arial,
+    'Lucida Grande',
+    sans-serif;
 }
 
 .footer-logo img {
