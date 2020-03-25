@@ -128,7 +128,11 @@ main {
 
 main h6 {
   color: #888;
-  font-family: Gotham;
+  font-family:
+  Gotham,
+    Arial,
+    'Lucida Grande',
+    sans-serif;;
   margin: 15px 0 0 6%;
 }
 
@@ -197,7 +201,7 @@ img[alt='Card-image'] {
     Gotham,
     Arial,
     'Lucida Grande',
-    sans-serif;;
+    sans-serif;
 }
 
 footer {
