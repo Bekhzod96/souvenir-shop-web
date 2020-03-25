@@ -9,7 +9,11 @@
 
 .search-section div {
   color: white;
-  font-family: Helvetica;
+  font-family: 
+  Helvetica, 
+  Arial,
+  'Lucida Grande',
+  sans-serif;
   font-weight: 700;
 }
 
@@ -30,7 +34,11 @@ aside {
 
 main section {
   width: 100%;
-  font-family: Helvetica;
+  font-family:
+  Helvetica,
+  Arial,
+  'Lucida Grande',
+  sans-serif;
   border: 1px solid lightgray;
 }
 
@@ -45,7 +53,11 @@ main section {
   padding: 20px 40px 20px 20px;
   gap: 35px;
   color: #888;
-  font-family: Gotham;
+  font-family: 
+  Gotham, 
+  Arial,
+  'Lucida Grande',
+  sans-serif;
   border: 1px solid lightgray;
   margin: 5px 0;
 }
@@ -61,12 +73,11 @@ main section {
   cursor: pointer;
 }
 
-.pages>* {
+.pages > * {
   border: 1px solid lightgray;
   padding: 5px 12px;
   margin: 3px;
 }
-
 
 .pages-container {
   display: flex;
@@ -76,6 +87,6 @@ main section {
   margin: 20px;
 }
 
-.pages-container>* {
+.pages-container > * {
   margin: 15px;
 }

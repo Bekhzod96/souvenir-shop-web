@@ -17,6 +17,15 @@ a {
   color: #888;
 }
 
+header a {
+  padding: 2px 10px;
+}
+
+article a {
+  margin: 0 20px;
+  font-size: xx-large;
+}
+
 a:hover {
   color: #d35266;
   text-decoration: none;
@@ -29,10 +38,6 @@ h1 {
 header {
   background-color: #383838;
   height: 5rem;
-}
-
-header a {
-  padding: 2px 10px;
 }
 
 img[alt='Logo'] {
@@ -78,10 +83,12 @@ input[type='text'] {
   width: 100%;
   height: 100%;
   background-image:
-    linear-gradient(to top,
+    linear-gradient(
+      to top,
       rgba(211, 82, 102, 0.9),
       rgba(255, 255, 255, 0.2),
-      rgba(211, 82, 102, 0.9));
+      rgba(211, 82, 102, 0.9)
+      );
 }
 
 .gradient:hover {
@@ -143,8 +150,9 @@ main h6 {
   box-shadow: 5px 10px 5px -5px #777;
 }
 
-.ads-content .btn,
-header .btn {
+header .btn,
+.ads-content .btn
+ {
   background-color: #d35266;
   color: white;
 }
@@ -153,11 +161,6 @@ article {
   display: flex;
   align-items: center;
   padding: 20px 0;
-}
-
-article a {
-  margin: 0 20px;
-  font-size: xx-large;
 }
 
 .suv-card {
