@@ -204,7 +204,7 @@ img[alt='Card-image'] {
 footer {
   padding: 20px;
   color: #888;
-  font-family: var(--helvetica)
+  font-family: var(--helvetica);
 }
 
 .footer-logo {
