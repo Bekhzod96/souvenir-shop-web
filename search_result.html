@@ -10,34 +10,38 @@
 	<script src="https://kit.fontawesome.com/7290f27402.js" crossorigin="anonymous"></script>
 	<link href="//db.onlinewebfonts.com/c/3a47f5f06b5484abfeee9eac90348a9c?family=Gotham" rel="stylesheet"
 		type="text/css" />
-	<link rel="stylesheet" href="style/style.css" />
 	<link rel="stylesheet" href="style/search_result.css" />
-	<title>Uzbek Souvenirs</title>
+	<link rel="stylesheet" href="style/style.css" />
+  <title>Uzbek Souvenirs</title>
 </head>
 
 <body>
-	<header class="d-flex justify-content-around align-items-center">
+  <header class="d-flex justify-content-around align-items-center">
 		<div>
 			<a href="index.html" class="header-logo">
 				<img src="image/logo.png" alt="Logo" />
 				<span> UzSuv</span>
 			</a>
-			<a href="#" class="fas fa-home display-none"> HOME</a>
-			<a href="#" class="fas fa-columns display-none"> Collection</a>
-			<a href="#" class="fas fa-shopping-cart"> PURCHASE LIST</a>
-			<button class="btn"> POST AN AD</button>
+			<a href="#" class="display-none" > <i class="fas fa-home "></i> HOME</a>
+			<a href="#" class="display-none"  > <i class="fas fa-columns"></i> COLLECTIONS</a>
+			<a href="#" class="display-none"  > <i class="fas fa-shopping-cart"></i> PURCHASE LIST</a>
+			<button class="btn">POST AN AD</button>
 		</div>
-		<a href="#">
-			<i class="far fa-envelope"></i>
+		<a href="#" class="display-none">
+			<i class="far fa-envelope "></i>
 			Bekzod Akhrorov
-		</a>
+    </a>
+    <span class="d-none menu-client-logo">
+    <a href="#" class="fas fa-bars"></a>
+    <a href="#" class="fas fa-user"></a>
+  </span>
 	</header>
 	<section class="search-section">
 		<div>
 			<h2 class="font-weight-bolder">UZSUV</h2>
 			<p>Search around 124,000 items are wainting to be sold!</p>
 			<form action="/search_result.html" class="d-flex">
-				<div class="dropdown ">
+				<div class="dropdown display-none">
 					<button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">
 						Categories
@@ -49,7 +53,7 @@
 					</div>
 				</div>
 				<input type="text" placeholder="Jacket" />
-				<input type="text" placeholder="100$" />
+				<input type="text" class=" display-none" placeholder="100$" />
 				<button class="bg-dark search-btn border-0 text-light">Search</button>
 			</form>
 		</div>
@@ -60,16 +64,16 @@
 		<aside class="display-none">
 			<input type="checkbox"> Cotton
 			<input type="checkbox"> Silk
-			<h6>Type</h6>
+			<h5 class="pt-4 font-weight-bolder ">Type</h5>
 			<hr>
-			<input type="checkbox"> Available in Stock <br>
+			<input type="checkbox" > Available in Stock <br>
 			<input type="checkbox"> In a production
-			<h6>Size</h6>
+			<h5 class="mt-3 font-weight-bolder">Size</h5>
 			<hr>
 			<input type="checkbox"> S - small <br>
 			<input type="checkbox"> M - medium <br>
 			<input type="checkbox"> L - large
-			<h6>Price</h6>
+			<h5 class="mt-3 font-weight-bolder">Price</h5>
 			<hr>
 			<input type="checkbox"> 1$ - 10$ <br>
 			<input type="checkbox"> 10$ - 100$ <br>
@@ -87,28 +91,29 @@
 				<div class="result-item-cont">
 					<h4>Jacket BUKHARA NATURAL SILK </h4>
 					<h5 class="font-red h6">SILK Production</h5>
-					<p>Uzbek national costume is quite varied. In Soviet times, it was almost forgotten. When I opened a clothing
+					<p class="display-none">Uzbek national costume is quite varied. In Soviet times, it was almost forgotten. When I opened a clothing
 						boutique my goal was to attract the attention of men and women to the traditional Uzbek costume. It is not
 						only beautiful, but also functional, comfortable, composed of natural materials.
 					</p>
 					<p><b>By:</b> Sayqal Design</p>
 					<p><b>Location:</b> Centeral Shoping Center, Samarand</p>
-					<p class="d-flex justify-content-between"> 24 March 2020 <button class="btn btn-danger"> Buy 40$</button></p>
+					<p class="d-flex justify-content-between"> 24 March 2020 <button class="btn btn-danger text-light"> Buy 40$</button></p>
 				</div>
 			</div>
 
 			<div class="result-item">
 				<img class="result-image" src="https://i.pinimg.com/originals/d3/76/c2/d376c2866d2818cc24cb1364850ded1d.jpg"
-					alt="result-image">
+          alt="result-image">
+          
 				<div class="result-item-cont">
 					<h4>STUNNING UZBEK </h4>
 					<h5 class="font-red h6">COTTON / SILK </h5>
-					<p> All Uzbek peoples wear robes on celebration and grand occasions (birthdays, weddings). The “Chapans” gifts
+					<p class="display-none"> All Uzbek peoples wear robes on celebration and grand occasions (birthdays, weddings). The “Chapans” gifts
 						are considered very valuable. They have an amazing variety and expressiveness of patterns.
 					</p>
 					<p><b>By:</b> Sayqal Design</p>
 					<p><b>Location:</b> Centeral Shoping Center, Samarand</p>
-					<p class="d-flex justify-content-between"> 24 March 2020 <button class="btn btn-danger"> Buy 40$</button></p>
+					<p class="d-flex justify-content-between"> 24 March 2020 <button class="btn btn-danger text-light"> Buy 40$</button></p>
 				</div>
 			</div>
 
@@ -118,13 +123,13 @@
 				<div class="result-item-cont">
 					<h4>STUNNING UZBEK </h4>
 					<h5 class="font-red h6">COTTON / SILK </h5>
-					<p>Since ancient times one of the most important articles of Uzbek traditional national clothes was a “Chapan”
+					<p class="display-none">Since ancient times one of the most important articles of Uzbek traditional national clothes was a “Chapan”
 						Robe. “The Chapan” has a very special value in tradition and culture of Central Asia people and in daily
 						life as well.
 					</p>
 					<p><b>By:</b> Sayqal Design</p>
 					<p><b>Location:</b> Centeral Shoping Center, Samarand</p>
-					<p class="d-flex justify-content-between"> 24 March 2020 <button class="btn btn-danger"> Buy 40$</button></p>
+					<p class="d-flex justify-content-between"> 24 March 2020 <button class="btn btn-danger text-light"> Buy 40$</button></p>
 				</div>
 			</div>
 
@@ -135,13 +140,13 @@
 				<div class="result-item-cont">
 					<h4>Jacket BUKHARA NATURAL SILK </h4>
 					<h5 class="font-red h6">SILK Production</h5>
-					<p>Uzbek national costume is quite varied. In Soviet times, it was almost forgotten. When I opened a clothing
+					<p class="display-none">Uzbek national costume is quite varied. In Soviet times, it was almost forgotten. When I opened a clothing
 						boutique my goal was to attract the attention of men and women to the traditional Uzbek costume. It is not
 						only beautiful, but also functional, comfortable, composed of natural materials.
 					</p>
 					<p><b>By:</b> Sayqal Design</p>
 					<p><b>Location:</b> Centeral Shoping Center, Samarand</p>
-					<p class="d-flex justify-content-between"> 24 March 2020 <button class="btn btn-danger"> Buy 40$</button></p>
+					<p class="d-flex justify-content-between"> 24 March 2020 <button class="btn btn-danger text-light"> Buy 40$</button></p>
 				</div>
 			</div>
 			<div class="result-item">
@@ -150,13 +155,13 @@
 				<div class="result-item-cont">
 					<h4>DRESS SAYQAL NATURAL SILK </h4>
 					<h5 class="font-red h6">SILK Production</h5>
-					<p>Uzbek national costume is quite varied. In Soviet times, it was almost forgotten. When I opened a clothing
+					<p class="display-none">Uzbek national costume is quite varied. In Soviet times, it was almost forgotten. When I opened a clothing
 						boutique my goal was to attract the attention of men and women to the traditional Uzbek costume. It is not
 						only beautiful, but also functional, comfortable, composed of natural materials.
 					</p>
 					<p><b>By:</b> Sayqal Design</p>
 					<p><b>Location:</b> Centeral Shoping Center, Samarand</p>
-					<p class="d-flex justify-content-between"> 24 March 2020 <button class="btn btn-danger"> Buy 40$</button></p>
+					<p class="d-flex justify-content-between"> 24 March 2020 <button class="btn btn-danger text-light"> Buy 40$</button></p>
 				</div>
 			</div>
 			<div class="pages-container">
@@ -179,7 +184,7 @@
 	</main>
 
 	<footer>
-		<div class="footer-top d-flex justify-content-around">
+		<div class="footer-top pl-5 d-flex justify-content-around">
 			<div class="w-50 footer-logo">
 				<a href="#">
 					<img src="image/logo.png" alt="Logo" />
@@ -190,44 +195,36 @@
 					make
 					a type specimen book.</span>
 			</div>
-			<div class="categories">
-				<h6 class="font-red ">Categories</h6>
-				<hr>
-				<ul class="list-unstyled">
-					<li><a href="#">Souvenir</a> </li>
-					<li><a href="#">Clothes</a> </li>
-					<li><a href="#">Shoes</a> </li>
-
-				</ul>
-			</div>
-			<div class="categories">
-				<h6 class="font-red ">CATIGORIES</h6>
-				<hr>
-				<ul class="list-unstyled">
-					<li><a href="#">Souvenir</a> </li>
-					<li><a href="#">Clothes</a> </li>
-					<li><a href="#">Shoes</a> </li>
-				</ul>
-			</div>
-
-			<div class="categories">
-				<h6 class="font-red ">NAVIGATION</h6>
-				<hr>
-				<ul class="list-unstyled">
-					<li><a href="#">Home</a> </li>
-					<li><a href="#">Sign In</a> </li>
-					<li><a href="#">Sign Up</a> </li>
-					<li><a href="#">Terms & Conditions</a> </li>
-					<li><a href="#">FAQ</a> </li>
-					<li><a href="#">Help</a> </li>
-				</ul>
-			</div>
-
-			<div class="categories">
-				<h6 class="font-red py-3">COUNTRY</h6>
-				<h6 class="font-red py-3">LANGUAGES</h6>
-				<h6 class="font-red py-3">CURRENCY</h6>
-			</div>
+      <div class="d-flex justify-content-around w-50">
+        <div class="categories mx-3">
+          <h6 class="font-red ">CATIGORIES</h6>
+          <hr />
+          <ul class="list-unstyled">
+            <li><a href="#">Souvenir</a></li>
+            <li><a href="#">Clothes</a></li>
+            <li><a href="#">Shoes</a></li>
+          </ul>
+        </div>
+  
+        <div class="categories mx-3">
+          <h6 class="font-red ">NAVIGATION</h6>
+          <hr />
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+  
+        <div class="categories display-none mx-3">
+          <h6 class="font-red py-3">COUNTRY</h6>
+          <h6 class="font-red py-3">LANGUAGES</h6>
+          <h6 class="font-red py-3">CURRENCY</h6>
+        </div>
+      </div>
 
 		</div>
 		<hr>

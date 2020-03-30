@@ -8,8 +8,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 	<script src="https://kit.fontawesome.com/7290f27402.js" crossorigin="anonymous"></script>
-	<link href="//db.onlinewebfonts.com/c/3a47f5f06b5484abfeee9eac90348a9c?family=Gotham" rel="stylesheet"
-		type="text/css" />
+    <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
 	<link rel="stylesheet" href="style/style.css" />
 	<title>Uzbek Souvenirs</title>
 </head>
@@ -21,25 +20,29 @@
 				<img src="image/logo.png" alt="Logo" />
 				<span> UzSuv</span>
 			</a>
-			<a href="#" class="fas fa-home display-none"> HOME</a>
-			<a href="#" class="fas fa-columns display-none"> Collection</a>
-			<a href="#" class="fas fa-shopping-cart"> PURCHASE LIST</a>
+			<a href="#" class="display-none" > <i class="fas fa-home "></i> HOME</a>
+			<a href="#" class="display-none"  > <i class="fas fa-columns"></i> COLLECTIONS</a>
+			<a href="#" class="display-none"  > <i class="fas fa-shopping-cart"></i> PURCHASE LIST</a>
 			<button class="btn">POST AN AD</button>
 		</div>
-		<a href="#">
-			<i class="far fa-envelope"></i>
+		<a href="#" class="display-none">
+			<i class="far fa-envelope "></i>
 			Bekzod Akhrorov
-		</a>
+    </a>
+    <span class="d-none menu-client-logo">
+    <a href="#" class="fas fa-bars"></a>
+    <a href="#" class="fas fa-user"></a>
+  </span>
 	</header>
 	<section class="search_section">
 		<h1>Like</h1>
 		<div class="gradient">
 			<div class="welcome"></div>
-			<form action="search_result.html" class="d-flex">
-				<div class="dropdown ">
+			<form action="search_result.html" class="d-flex justify-content-center">
+				<div class="dropdown display-none">
 					<button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">
-						Categories
+						All Departments
 					</button>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
 						<button class="dropdown-item" type="button">Souviners</button>
@@ -47,8 +50,8 @@
 						<button class="dropdown-item" type="button">Shoes</button>
 					</div>
 				</div>
-				<input type="text" placeholder="Souvenir" />
-				<input type="text" placeholder="Price" />
+				<input type="text" placeholder="What do you search for?" />
+				<input type="text" class="display-none" placeholder="Location" />
 				<button class="bg-dark border-0 text-light">Search</button>
 			</form>
 		</div>
@@ -58,13 +61,14 @@
 		<a href="#" class="fas fa-chevron-left"></a>
 
 		<div class="carousel slide w-100 d-flex justify-content-center" data-ride="carousel">
-			<div class="carousel-inner w-75">
+			<div class="carousel-inner h-100">
 				<h4 class="titles my-3">HOT ADS</h4>
 				<div class="carousel-item active ads-content">
 					<!-- Frist Ads -->
 					<img class="ads-image"
 						src="https://isthatplacesafe.com/wp-content/uploads/2019/01/how-safe-is-uzbekistan-for-tourists.jpg"
-						alt="Ads-image" />
+            alt="Ads-image" />
+            <div class="carousel-body">
 					<h2 class="font-red">Ceramic hand made sculpture</h2>
 					<p>
 						A souvenir memento, keepsake, or token of remembrance is an object
@@ -75,24 +79,25 @@
 						experience. Without the owner's input, the symbolic meaning is
 						invisible and cannot be articulated.
 					</p>
-					<p><b>By:</b>Akmal Q.</p>
-					<p><b>Location:</b>Registan, Samarkand</p>
-					<button class="btn ">Buy 40$</button>
+					<p><b>By:</b> Akmal Q.</p>
+					<p><b>Location:</b> Registan, Samarkand</p>
+					<button class="btn ">Buy 40$</button></div> 
 				</div>
 
 				<div class="carousel-item  ads-content">
 					<!-- Second Ads // Thinks to do in Uzbekistan -->
 					<img class="ads-image"
 						src="https://cdn.twomonkeystravelgroup.com/wp-content/uploads/2019/11/Things-to-do-in-Uzbekistan3.png"
-						alt="Ads-image" />
+            alt="Ads-image" />
+            <div class="carousel-body">
 					<h2 class="font-red">Ancient Cities Tour to Uzbekistan</h2>
 					<p><b> Ancient Cities Tour to Uzbekistan: </b>Explore Ancient Cities
 						Samarkand, Shakhrisabz, Bukhara and Khiva - the Oldest Inhabited
 						Cities in Central Asia.
 					</p>
-					<p><b>By:</b>Amina Tour</p>
-					<p><b>Location:</b>Tasheknt</p>
-					<button class="btn ">Buy 440$</button>
+					<p><b>By:</b> Amina Tour</p>
+					<p><b>Location:</b> Tasheknt</p>
+					<button class="btn ">Buy 440$</button></div>
 				</div>
 			</div>
 		</div>
@@ -116,7 +121,7 @@
 							<div class="suv-card">
 								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image" />
 								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red">Colored</h5>
+								<h6 class="font-red">Colored</h6>
 								<p><span>From</span> Samarkand, UZ</p>
 								<!-- Last line of the card -->
 								<div class="dropup d-flex align-items-baseline justify-content-between">
@@ -136,7 +141,7 @@
 							<div class="suv-card ">
 								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image" />
 								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red">Colored</h5>
+								<h6 class="font-red">Colored</h6>
 								<p><span>From</span> Samarkand, UZ</p>
 								<!-- Last line of the card -->
 								<div class="dropup d-flex align-items-baseline justify-content-between">
@@ -156,7 +161,7 @@
 							<div class="suv-card display-none">
 								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image" />
 								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red">Colored</h5>
+								<h6 class="font-red">Colored</h6>
 								<p><span>From</span> Samarkand, UZ</p>
 								<!-- Last line of the card -->
 								<div class="dropup d-flex align-items-baseline justify-content-between">
@@ -201,7 +206,7 @@
 							<div class="suv-card">
 								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image" />
 								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red">Colored</h5>
+								<h6 class="font-red">Colored</h6>
 								<p><span>From</span> Samarkand, UZ</p>
 								<!-- Last line of the card -->
 								<div class="dropup d-flex align-items-baseline justify-content-between">
@@ -221,7 +226,7 @@
 							<div class="suv-card">
 								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image" />
 								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red">Colored</h5>
+								<h6 class="font-red">Colored</h6>
 								<p><span>From</span> Samarkand, UZ</p>
 								<!-- Last line of the card -->
 								<div class="dropup d-flex align-items-baseline justify-content-between">
@@ -241,7 +246,7 @@
 							<div class="suv-card display-none">
 								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image" />
 								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red">Colored</h5>
+								<h6 class="font-red">Colored</h6>
 								<p><span>From</span> Samarkand, UZ</p>
 								<!-- Last line of the card -->
 								<div class="dropup d-flex align-items-baseline justify-content-between">
@@ -261,7 +266,7 @@
 							<div class="suv-card display-none">
 								<img src="https://shelkoviyput.ru/image/cache/catalog/370-240x218.jpg" alt="Card-image" />
 								<h5>Handmade Souvenir</h5>
-								<h5 class="font-red">Colored</h5>
+								<h6 class="font-red">Colored</h6>
 								<p><span>From</span> Samarkand, UZ</p>
 								<!-- Last line of the card -->
 								<div class="dropup d-flex align-items-baseline justify-content-between">
@@ -301,12 +306,12 @@
 						<div class="d-flex justify-content-around">
 							<div class="suv-card">
 								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image" />
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+										<h5>Costume Jacket</h5>
+                <h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidery Suzani</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
+										>
 										+
 									</button>
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -320,9 +325,9 @@
 
 							<div class="suv-card">
 								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image" />
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Costume Jacket</h5>
+                <h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidery Suzani</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -339,9 +344,9 @@
 
 							<div class="suv-card display-none">
 								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image" />
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Costume Jacket</h5>
+                <h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidery Suzani</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -358,9 +363,9 @@
 
 							<div class="suv-card display-none">
 								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image" />
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Costume Jacket</h5>
+                <h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidery Suzani</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -382,9 +387,9 @@
 						<div class="d-flex justify-content-around">
 							<div class="suv-card">
 								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image" />
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Costume Jacket</h5>
+                <h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidery Suzani</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -401,9 +406,9 @@
 
 							<div class="suv-card">
 								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image" />
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Costume Jacket</h5>
+                <h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidery Suzani</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" id="dropdownMenuButton" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
@@ -420,9 +425,9 @@
 
 							<div class="suv-card display-none">
 								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image" />
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+								<h5>Costume Jacket</h5>
+                <h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidery Suzani</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -439,9 +444,9 @@
 
 							<div class="suv-card display-none">
 								<img src="https://images-na.ssl-images-amazon.com/images/I/81oUt5Ip1TL._SY500_.jpg" alt="Card-image" />
-								<h5>COSTUME JACKET</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Costume Jacket</h5>
+                <h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidery Suzani</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -477,9 +482,9 @@
 						<div class="d-flex justify-content-around">
 							<div class="suv-card">
 								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image" />
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+								<h5>Women Shoes</h5>
+								<h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidane Suzane</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -496,9 +501,9 @@
 
 							<div class="suv-card">
 								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image" />
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Women Shoes</h5>
+								<h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidane Suzane</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -515,9 +520,9 @@
 
 							<div class="suv-card display-none">
 								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image" />
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Women Shoes</h5>
+								<h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidane Suzane</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -534,9 +539,9 @@
 
 							<div class="suv-card display-none">
 								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image" />
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Women Shoes</h5>
+								<h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidane Suzane</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -558,9 +563,9 @@
 						<div class="d-flex justify-content-around">
 							<div class="suv-card">
 								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image" />
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Women Shoes</h5>
+								<h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidane Suzane</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -577,9 +582,9 @@
 
 							<div class="suv-card">
 								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image" />
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Women Shoes</h5>
+								<h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidane Suzane</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -596,9 +601,9 @@
 
 							<div class="suv-card display-none">
 								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image" />
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Women Shoes</h5>
+								<h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidane Suzane</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -613,11 +618,11 @@
 								</div>
 							</div>
 
-							<div class="suv-card display-none">
+							<div class="suv-card display-none h-100">
 								<img src="https://www.tourstouzbekistan.com/uploads/blog/shoes1.jpg" alt="Card-image" />
-								<h5>WOMEN SHOES</h5>
-								<h5 class="font-red">SILK</h5>
-								<p><span>Made</span> EMBROIDERY SUZANI</p>
+                <h5>Women Shoes</h5>
+								<h6 class="font-red">Silk</h6>
+								<p><span>Made</span> Embroidane Suzane</p>
 								<div class="dropup d-flex align-items-baseline justify-content-between">
 									<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -651,8 +656,9 @@
 					industry. Lorem Ipsum has been the industry's standard dummy text
 					ever since the 1500s, when an unknown printer took a galley of type
 					and scrambled it to make a type specimen book.</span>
-			</div>
-			<div class="categories">
+      </div>
+      <div class="d-flex justify-content-around w-50">
+			<div class="categories mx-3">
 				<h6 class="font-red ">CATIGORIES</h6>
 				<hr />
 				<ul class="list-unstyled">
@@ -662,7 +668,7 @@
 				</ul>
 			</div>
 
-			<div class="categories">
+			<div class="categories mx-3">
 				<h6 class="font-red ">NAVIGATION</h6>
 				<hr />
 				<ul class="list-unstyled">
@@ -675,12 +681,13 @@
 				</ul>
 			</div>
 
-			<div class="categories">
+			<div class="categories display-none mx-3">
 				<h6 class="font-red py-3">COUNTRY</h6>
 				<h6 class="font-red py-3">LANGUAGES</h6>
 				<h6 class="font-red py-3">CURRENCY</h6>
 			</div>
-		</div>
+    </div>
+  </div>
 		<hr />
 		<div class="footer-bottom">
 			Copyright 2020. All Rights Reserved. Designed by Bekhzod Akhrorov

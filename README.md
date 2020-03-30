@@ -1,8 +1,16 @@
 # Uzbek_Souvenirs.com
 
-\*\_This online shop build to sell Uzbek Souvenirs for Tourists:
 
-![Preview](image/Screenshot.jpg?raw=true 'Title')
+In this project, I created an online shop for souvenirs and traditional Uzbek clothes and shoes. It contains two pages main product page and searches result page. 
+The main page includes in itself the ADS section and top product according to the category.  In result page search result and a sight filtering possibility according to some criteria. This site built only using HTML5&CSS3 and Bootsrap for that I don't have any functionality. 
+
+\*\_This online shop builds to sell Uzbek Souvenirs for Tourists Main page:
+
+![Preview](image/Screenshot_1.jpg.jpg?raw=true 'Title')
+
+
+\*\_This online shop build to sell Uzbek Souvenirs for Tourists Serch Result papge:
+![Preview](image/Screenshot_2.jpg.jpg?raw=true 'Title')
 
 ## Build With
 
@@ -35,7 +43,7 @@
 ## 🤝 Contributing
 
 **Contributions, issues and feature requests are welcome!**
-Feel free to check the [issues page]() .
+
 
 ## Show your support
 

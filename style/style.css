@@ -1,29 +1,35 @@
+:root {
+  --gotham:
+    'Gotham',
+    'Helvetica Neue Medium',
+    sans-serif;
+  --helvetica:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    sans-serif;
+}
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family:
-    'HelveticaNeue-Light',
-    'Helvetica Neue Light',
-    'Helvetica Neue',
-    Helvetica,
-    Gotham,
-    Arial,
-    'Lucida Grande',
-    sans-serif;
+  min-width: 320px;
+  font-family: var(--gotham);
 }
 
 a {
   color: #888;
+  font-family: var(--helvetica);
 }
 
 header a {
-  padding: 2px 10px;
+  padding: 2px 10px; 
 }
 
-article a {
-  margin: 0 20px;
-  font-size: xx-large;
+article > a {
+  margin: 0 10px;
+  font-size: x-large;
 }
 
 a:hover {
@@ -50,10 +56,7 @@ img[alt='Logo'] {
 
 .header-logo span {
   font-family:
-    Gotham,
-    Arial,
-    'Lucida Grande',
-    sans-serif;
+    var(--gotham);    
   font-weight: 900;
   color: white;
   font-size: x-large;
@@ -68,9 +71,16 @@ img[alt='Logo'] {
 }
 
 input[type='text'] {
-  width: 20rem;
+  width: 25rem;
   margin-left: 1px;
   padding: 2px 13px;
+}
+
+form,
+.btn,
+.dropdown-item {
+  font-family: var(--helvetica);
+  color:#888;
 }
 
 .search-btn {
@@ -106,8 +116,8 @@ input[type='text'] {
 }
 
 .welcome {
-  height: 120px;
-  width: 400px;
+  height: 150px;
+  width: 500px;
   background-image: url('https://uzbektourism.uz/uploads/images/597new.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -126,14 +136,10 @@ main {
   padding: 10px 80px;
 }
 
-main h6 {
+main > h6 {
   color: #888;
-  font-family:
-    Gotham,
-    Arial,
-    'Lucida Grande',
-    sans-serif;
-  margin: 15px 0 0 6%;
+  font-family: var(--helvetica);
+  margin: 15px 0 0 2%;
 }
 
 .font-red {
@@ -142,25 +148,21 @@ main h6 {
 }
 
 .ads_section {
-  height: 25%;
   padding: 0 50px;
 }
 
 .ads-content {
   color: #888;
-  font-family:
-    'Helvetica Neue',
-    Arial,
-    'Lucida Grande',
-    sans-serif;
+  font-family: var(--helvetica);
   line-height: 1.2;
   font-size: 15px;
 }
 
 .ads-image {
-  height: 20rem;
+  height: 25rem;
   float: left;
   margin-right: 30px;
+  margin-bottom: 30px;
   box-shadow: 5px 10px 5px -5px #777;
 }
 
@@ -168,6 +170,10 @@ header .btn,
 .ads-content .btn {
   background-color: #d35266;
   color: white;
+}
+
+.ads_section .carousel-inner{
+  width: 85%;
 }
 
 article {
@@ -182,11 +188,7 @@ article {
   border: 1px solid lightgrey;
   padding: 15px;
   color: #888;
-  font-family:
-    'Helvetica Neue',
-    Arial,
-    'Lucida Grande',
-    sans-serif;
+  font-family: var(--helvetica);
 }
 
 img[alt='Card-image'] {
@@ -197,31 +199,19 @@ img[alt='Card-image'] {
 .titles,
 .categories {
   color: #888;
-  font-family:
-    Gotham,
-    Arial,
-    'Lucida Grande',
-    sans-serif;
+  font-family:var(--gotham)
 }
 
 footer {
   padding: 20px;
   color: #888;
-  font-family:
-    'Helvetica Neue',
-    Arial,
-    'Lucida Grande',
-    sans-serif;
+  font-family:var(--helvetica)
 }
 
 .footer-logo {
   display: flex;
   color: #888;
-  font-family:
-    Gotham,
-    Arial,
-    'Lucida Grande',
-    sans-serif;
+  font-family:var(--gotham)
 }
 
 .footer-logo img {
@@ -238,6 +228,10 @@ footer {
     display: none;
   }
 
+  input[placeholder="Location"]{
+    display: none;
+  }
+
   input[type='text'] {
     width: 15rem;
   }
@@ -249,7 +243,19 @@ footer {
   }
 
   input[type='text'] {
-    width: 10rem;
+    width: 15em;
+  }
+
+  .welcome{
+    width: 300px;
+  }
+
+  main{
+    padding: 20px;
+  }
+
+  .ads_section{
+    padding: 0 15px;
   }
 
   .suv-card {
@@ -262,6 +268,10 @@ footer {
     margin: 0 10px;
   }
 
+  .menu-client-logo{
+    display: flex !important;
+  }
+
   .footer-top {
     flex-direction: column;
     align-items: center;
@@ -272,5 +282,11 @@ footer {
     display: flex;
     justify-content: center;
     margin: 0 0 20px 40px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .carousel-body{
+    display: none;
   }
 }
