@@ -55,7 +55,7 @@ img[alt='Logo'] {
 }
 
 .header-logo span {
-  font-family: var(--gotham);    
+  font-family: var(--gotham);
   font-weight: 900;
   color: white;
   font-size: x-large;
@@ -79,7 +79,7 @@ form,
 .btn,
 .dropdown-item {
   font-family: var(--helvetica);
-  color:#888;
+  color: #888;
 }
 
 .search-btn {
@@ -171,7 +171,7 @@ header .btn,
   color: white;
 }
 
-.ads_section .carousel-inner{
+.ads_section .carousel-inner {
   width: 85%;
 }
 
@@ -198,7 +198,7 @@ img[alt='Card-image'] {
 .titles,
 .categories {
   color: #888;
-  font-family: var(--gotham)
+  font-family: var(--gotham);
 }
 
 footer {
@@ -210,7 +210,7 @@ footer {
 .footer-logo {
   display: flex;
   color: #888;
-  font-family: var(--gotham)
+  font-family: var(--gotham);
 }
 
 .footer-logo img {
