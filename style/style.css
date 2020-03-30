@@ -16,6 +16,7 @@ body {
   box-sizing: border-box;
   min-width: 320px;
   font-family: var(--gotham);
+  overflow-x: hidden;
 }
 
 a {
@@ -70,7 +71,7 @@ img[alt='Logo'] {
 }
 
 input[type='text'] {
-  width: 25rem;
+  width:50%;
   margin-left: 1px;
   padding: 2px 13px;
 }
@@ -158,7 +159,7 @@ main > h6 {
 }
 
 .ads-image {
-  height: 25rem;
+  width: 50%;
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -183,6 +184,7 @@ article {
 
 .suv-card {
   width: 23%;
+  min-height: 425px;
   background-color: white;
   border: 1px solid lightgrey;
   padding: 15px;
@@ -226,23 +228,11 @@ footer {
   header .btn {
     display: none;
   }
-
-  input[placeholder="Location"] {
-    display: none;
-  }
-
-  input[type='text'] {
-    width: 15rem;
-  }
 }
 
 @media screen and (max-width: 768px) {
   .display-none {
-    display: none;
-  }
-
-  input[type='text'] {
-    width: 15em;
+    display: none !important;
   }
 
   .welcome {
@@ -255,6 +245,10 @@ footer {
 
   .ads_section {
     padding: 0 15px;
+  }
+
+  .ads-image {
+    width: 100%;
   }
 
   .suv-card {
