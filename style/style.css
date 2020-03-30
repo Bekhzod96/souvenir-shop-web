@@ -24,7 +24,7 @@ a {
 }
 
 header a {
-  padding: 2px 10px; 
+  padding: 2px 10px;
 }
 
 article > a {
@@ -55,8 +55,7 @@ img[alt='Logo'] {
 }
 
 .header-logo span {
-  font-family:
-    var(--gotham);    
+  font-family: var(--gotham);    
   font-weight: 900;
   color: white;
   font-size: x-large;
@@ -199,19 +198,19 @@ img[alt='Card-image'] {
 .titles,
 .categories {
   color: #888;
-  font-family:var(--gotham)
+  font-family: var(--gotham)
 }
 
 footer {
   padding: 20px;
   color: #888;
-  font-family:var(--helvetica)
+  font-family: var(--helvetica)
 }
 
 .footer-logo {
   display: flex;
   color: #888;
-  font-family:var(--gotham)
+  font-family: var(--gotham)
 }
 
 .footer-logo img {
@@ -228,7 +227,7 @@ footer {
     display: none;
   }
 
-  input[placeholder="Location"]{
+  input[placeholder="Location"] {
     display: none;
   }
 
@@ -246,15 +245,15 @@ footer {
     width: 15em;
   }
 
-  .welcome{
+  .welcome {
     width: 300px;
   }
 
-  main{
+  main {
     padding: 20px;
   }
 
-  .ads_section{
+  .ads_section {
     padding: 0 15px;
   }
 
@@ -268,7 +267,7 @@ footer {
     margin: 0 10px;
   }
 
-  .menu-client-logo{
+  .menu-client-logo {
     display: flex !important;
   }
 
@@ -286,7 +285,7 @@ footer {
 }
 
 @media screen and (max-width: 570px) {
-  .carousel-body{
+  .carousel-body {
     display: none;
   }
 }
